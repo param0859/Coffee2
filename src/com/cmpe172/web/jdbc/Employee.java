@@ -1,6 +1,6 @@
 package com.cmpe172.web.jdbc;
 
-public class Student {
+public class Employee {
 
 	
 	private int id; 
@@ -14,7 +14,7 @@ public class Student {
 	
 	
 	
-	public Student(String firstName, String lastName, String email, String phone, String manager) {
+	public Employee(String firstName, String lastName, String email, String phone, String manager) {
 		super();
 		this.firstName = firstName;
 		this.lastName = lastName;
@@ -27,7 +27,7 @@ public class Student {
 
 
 
-	public Student(int id, String firstName, String lastName, String email, String phone, String manager) {
+	public Employee(int id, String firstName, String lastName, String email, String phone, String manager) {
 		super();
 		this.id = id;
 		this.firstName = firstName;
@@ -121,7 +121,7 @@ public class Student {
 
 	@Override
 	public String toString() {
-		return "Student [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phone=" + phone +", manager=" + manager +"]";
+		return "Employee [id=" + id + ", firstName=" + firstName + ", lastName=" + lastName + ", email=" + email + ", phone=" + phone +", manager=" + manager +"]";
 	}
 	
 	

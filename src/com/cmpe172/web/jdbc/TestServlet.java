@@ -43,7 +43,7 @@ public class TestServlet extends HttpServlet {
 		try {
 			myConn = dataSource.getConnection();
 		//Create SQL Statements
-			String sql = "select * from student";
+			String sql = "select * from employee";
 			myStmt = myConn.createStatement();
 		
 		//Execute SQL 
