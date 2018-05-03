@@ -233,7 +233,7 @@ public class EmployeeControllerServlet extends HttpServlet {
 		}
 
 
-		else if(request.getParameter("phoneNumber").isEmpty())
+		else if(request.getParameter("phone").isEmpty())
 		{
 		RequestDispatcher dispatcher = request.getRequestDispatcher("/add-employee-form.jsp");
 		dispatcher.forward(request, response);
