@@ -3,4 +3,13 @@ readme
 hello world 
 Hello 2
 
+<<<<<<< HEAD
 abc
+=======
+update
+hi
+testain
+ag
+
+hw
+>>>>>>> origin/master
