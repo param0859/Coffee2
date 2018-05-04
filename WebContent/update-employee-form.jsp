@@ -23,14 +23,14 @@
 
 <div id="wrapper">
 
-<div id="header">
+<div class="row">
 
 <h2>Cafe Mocha Employee Portal</h2>
 </div>
 
 </div>
 
-<div id="container">
+<div class="row" align="center">
 
 <h3>Update Employee:</h3>
 
@@ -39,7 +39,7 @@
 <input type="hidden" name="command" value="UPDATE"/>
 <input type="hidden" name="employeeId" value="${THE_EMPLOYEE.id}"/>
 
-<table>
+<table class ="table">
 
 <tbody>
 
@@ -51,25 +51,25 @@
 </tr>
 <tr>
 <td><label>Last name:</label></td>
-<td><input type="text" name="lastName" value="${THE_EMPLOYEE.lastName}"/></td>
+<td><input type="text" name="lastName" value="${THE_EMPLOYEE.lastName}" class="form-control"/></td>
 
 </tr>
 
 <tr>
 <td><label>Email:</label></td>
-<td><input type="text" name="email" value="${ THE_EMPLOYEE.email}"/></td>
+<td><input type="text" name="email" value="${THE_EMPLOYEE.email}" class="form-control"/></td>
 
 </tr>
 
 <tr>
 <td><label>	Phone Number:</label></td>
-<td><input type="text" name="phone" value="${ THE_EMPLOYEE.phone}"/></td>
+<td><input type="text" name="phone" value="${THE_EMPLOYEE.phone}" class="form-control"/></td>
 
 </tr>
 
 <tr>
 <td><label>	Manager:</label></td>
-<td><input type="text" name="manager" value="${ THE_EMPLOYEE.manager}"/></td>
+<td><input type="text" name="manager" value="${THE_EMPLOYEE.manager}" class="form-control"/></td>
 
 </tr>
 
@@ -77,7 +77,7 @@
 
 <tr>
 <td><label></label></td>
-<td><input type="submit" value="Save"  class="save"/></td>
+<td><input type="submit" value="Save"  class="save" class="form-control"/></td>
 
 </tr>
 

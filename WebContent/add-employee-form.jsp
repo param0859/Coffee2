@@ -39,7 +39,7 @@
 
 <input type="hidden" name="command" value="ADD"/>
 
-<table>
+<table class="table">
 
 <tbody>
 

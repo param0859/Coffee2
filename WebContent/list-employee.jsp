@@ -1,12 +1,16 @@
 <%@ taglib uri="http://java.sun.com/jsp/jstl/core" prefix="c"%>
-
+<%@ page language="java" contentType="text/html; charset=ISO-8859-1"
+    pageEncoding="ISO-8859-1"%>
 <!DOCTYPE html>
 
 <html>
 <!-- <meta http-equiv="refresh" content="5" /> -->
 
 <head>
+ <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
 <title>Cafe Mocha App</title>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
+   <meta name="google-signin-client_id" content="795524120590-t7k3ik0heqbvukhc1a5ffen77migrn7j.apps.googleusercontent.com">
 
 <link type="text/css" rel="stylesheet" href="css/style.css">
 <link type="text/css" rel="stylesheet"
@@ -49,7 +53,7 @@
 				<form action="EmployeeControllerServlet" method="GET">
         
                 <input type="hidden" name="command" value="SEARCH" />
-            
+            <div class="g-signin2" data-onsuccess="onSignIn" id="myP" style="display: none;"></div>
                 Search employee: <input type="text" name="theSearchName" />
                 
                 <input type="submit" value="Search" class="add-employee-button" />
@@ -180,6 +184,17 @@
 	
 	
 	</form> -->
+	<a class="btn btn-primary" href="https://www.gmail.com" target="_blank">Gmail</a>
+	
+	<button onclick="myFunction()">Sign Out</button>
+   <script>
+      function myFunction() {
+    	  gapi.auth2.getAuthInstance().disconnect();
+          location.reload();
+    	//that.myFunction();  
+      location.href = "index.jsp";
+   }
+   </script>
 </body>
 
 

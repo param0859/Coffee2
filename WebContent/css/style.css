@@ -80,7 +80,7 @@ tbody {
  margin: 2px;
  padding: 5px;
  border: 2px solid grey;
- background: blue;
+ background: #399caa;
  }
  
 
@@ -89,8 +89,8 @@ tbody {
 	color: white;
 }
 
-tr:nth-child(even) {background: #FFFFFF}
-tr:nth-child(odd) {background: #BBBBBB}	
+tr:nth-child(even) {background: #6699cc}
+tr:nth-child(odd) {background: #cccccc}	
 
 #wrapper {width: 100%; margin-top: 0px; }
 #header {width: 72%; background: #2E160D; margin-top: 0px; padding:15px 0px 15px 0px;}
