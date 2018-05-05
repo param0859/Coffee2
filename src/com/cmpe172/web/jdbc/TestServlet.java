@@ -15,24 +15,27 @@ import javax.sql.DataSource;
 /**
  * Servlet implementation class TestServlet
  */
-@WebServlet("/TestServlet")
+@WebServlet("/TestServlet")   // this is the webservlet used by TomCat server
+
+// this class is implemented just to test the servlet
 public class TestServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
 	
 	//Define dataSource
 	
-	@Resource(name="jdbc/coffeeshop")
-	private DataSource dataSource;
+	@Resource(name="jdbc/coffeeshop")  // name of the MySQL database
+	private DataSource dataSource;  // private variable
 
 	/**
 	 * @see HttpServlet#doGet(HttpServletRequest request, HttpServletResponse response)
 	 */
+	// doGet method is implemented as a required method for HTTP servlet as we are sending a get request to the server
 	protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
 		
 		//PrintWriter 
-		PrintWriter out = response.getWriter();
-		response.setContentType("text/plain");
+		PrintWriter out = response.getWriter();  
+		response.setContentType("text/plain");  
 		
 		
 		//Connection to DB 
@@ -56,9 +59,9 @@ public class TestServlet extends HttpServlet {
 	}
 		}
 		
-		catch (Exception e)
+		catch (Exception e)   // catch if any exception
 		{
-			e.printStackTrace();
+			e.printStackTrace();   // prints the exception in detail
 		}
 		
 	}

@@ -6,14 +6,23 @@
    <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
    <title>Insert title here</title>
    <script src="https://apis.google.com/js/platform.js" async defer></script>
+   <link type="text/css" rel="stylesheet" href="css/style_login.css">
    <meta name="google-signin-client_id" content="795524120590-t7k3ik0heqbvukhc1a5ffen77migrn7j.apps.googleusercontent.com">
 </head>
 <body>
-   <div class="g-signin2" data-onsuccess="onSignIn" id="myP"></div>
+<div id = "login">
+<h1>Welcome, Guest</h1>
+<!-- Google Sign In Button -->
+<h2>Please login to the Cafe Mocha portal using your Gmail</h2>
+   <div class="g-signin2" id="button" data-onsuccess="onSignIn" id="myP"></div>
       <img id="myImg"><br>
       <p id="name"></p>
       <div id="status">
    </div>
+   
+   
+   </div>
+<!-- Scripts for signing in -->
    <script type="text/javascript">
       function onSignIn(googleUser) {
        window.location.href='EmployeeControllerServlet';
